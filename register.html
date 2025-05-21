@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h2>Register</h2>
+    <form method="POST">
+        Name: <input type="text" name="name" required><br>
+        Email: <input type="email" name="email" required><br>
+        Password: <input type="password" name="password" required><br>
+        Role: 
+        <select name="role">
+            <option value="Patient">Patient</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Admin">Admin</option>
+        </select><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
